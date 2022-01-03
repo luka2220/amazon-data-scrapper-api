@@ -1,0 +1,25 @@
+{
+  "name": "amazon-data-scraper-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luka2220/amazon-data-scrapper-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luka2220/amazon-data-scrapper-api/issues"
+  },
+  "homepage": "https://github.com/luka2220/amazon-data-scrapper-api#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15",
+    "request-promise": "^4.2.6"
+  }
+}
