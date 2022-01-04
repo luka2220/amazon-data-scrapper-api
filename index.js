@@ -44,6 +44,20 @@ app.get('/products/:productId/reviews', async (req, res) => {
     }
 })
 
+// fetching product offers
+app.get('/products/:productId/offers', async (req, res) => {
+    const { productId } = req.params;
+
+    try {
+        // gets the data from the productId arg passed
+        const response = await request(`${baseUrl}&url=https://www.amazon.com/gp/offer-listing/${productId}`);
+
+        res.json(JSON.parse(response));
+    } catch (error) {
+        res.json(error);
+    }
+})
+
 // server will listen on port 5000
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
